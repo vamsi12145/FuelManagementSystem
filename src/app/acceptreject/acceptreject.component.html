@@ -1,0 +1,32 @@
+<form #acceptRejectForm = "ngForm" (ngSubmit) = "acceptOrRejectOrder(acceptRejectForm)">
+    <table border = "3">
+        <tr>
+            <td>Vendor Id</td>
+            <td>
+                <input type = "text" name = "venId" [(ngModel)] = "venId"/>
+            </td>
+        </tr>
+        <tr>
+            <td>Order Id</td>
+            <td>
+                <select name = "orderId" [(ngModel)] = "orderId">
+                    <option *ngFor="let o of orderList | async" value = {{o.order_id}}>
+                        {{o.order_id }}
+                    </option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Status</td>
+            <td>
+                <select name = "ordStatus" [(ngModel)] = "ordStatus">
+                    <option value = "Accept">Accept</option>
+                    <option value = "Reject">Reject</option>
+                </select>
+            </td>
+        </tr>
+<tr>
+            <input type="submit" value="Submit"/>
+        </tr>
+    </table>
+</form>

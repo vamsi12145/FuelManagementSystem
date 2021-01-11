@@ -1,0 +1,42 @@
+.topnav {
+    overflow: hidden;
+    background-attachment: fixed;
+    background-color:black;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+   body,html
+  {
+    background-image: url('https://th.bing.com/th/id/OIP.YtBE7YBJwTCNs43UsZeSVAHaE8?w=269&h=180&c=7&o=5&dpr=1.3&pid=1.7');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    align-items: center;
+  } 
+  .topnav a.active {
+    color: white;
+  }
+  .topnav-right {
+    float: right;
+  }
+  a:visited
+  {
+  color:black
+  }
+  img
+  {
+    height: 150px;
+    width:150px;
+  } 
